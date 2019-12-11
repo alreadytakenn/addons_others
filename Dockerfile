@@ -17,6 +17,6 @@ RUN set -x; \
 RUN set -x; \
             apt-get update \
             && apt-get install -y --no-install-recommends \
-            inetutils-ping \
+            net-tools \
             && rm -rf /var/lib/apt/lists/*
  
