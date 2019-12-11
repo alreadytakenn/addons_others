@@ -16,6 +16,7 @@ RUN set -x; \
 
 RUN set -x; \
             apt-get update \
-            && apt-get install inetutils-ping \
+            && apt-get install -y --no-install-recommends \
+            && inetutils-ping \
             && rm -rf /var/lib/apt/lists/*
  
