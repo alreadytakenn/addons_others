@@ -12,4 +12,9 @@ RUN set -x; \
             && apt-get install -y --no-install-recommends \
             git \
             vim \
-        && rm -rf /var/lib/apt/lists/* 
+        && rm -rf /var/lib/apt/lists/*
+
+RUN set -x; \
+            apt-get install inetutils-ping \
+            && rm -rf /var/lib/apt/lists/*
+ 
